@@ -1,0 +1,9 @@
+true
+false
+[4|Smith|smith@yahoo.com, 1|rahamath|rahamath18@yahoo.com, 1|rahamath|rahamath18@yahoo.com, 3|John|john@yahoo.com, 2|Adam|adam@yahoo.com]
+[1|rahamath|rahamath18@yahoo.com, 1|rahamath|rahamath18@yahoo.com, 2|Adam|adam@yahoo.com, 3|John|john@yahoo.com, 4|Smith|smith@yahoo.com]
+[2|Adam|adam@yahoo.com, 3|John|john@yahoo.com, 4|Smith|smith@yahoo.com, 1|rahamath|rahamath18@yahoo.com, 1|rahamath|rahamath18@yahoo.com]
+{1|rahamath|rahamath18@yahoo.com=001, 2|Adam|adam@yahoo.com=003, 3|John|john@yahoo.com=002, 4|Smith|smith@yahoo.com=004}
+{2|Adam|adam@yahoo.com=003, 3|John|john@yahoo.com=002, 4|Smith|smith@yahoo.com=004, 1|rahamath|rahamath18@yahoo.com=001}
+[-1|xyz|adam@yahoo.com=-1, 1|rahamath|rahamath18@yahoo.com=001, 3|John|john@yahoo.com=002, 2|Adam|adam@yahoo.com=003, 4|Smith|smith@yahoo.com=004]
+[-1|xyz|adam@yahoo.com=-1, 1|rahamath|rahamath18@yahoo.com=001, 4|Smith|smith@yahoo.com=004, 3|John|john@yahoo.com=002, 2|Adam|adam@yahoo.com=003]

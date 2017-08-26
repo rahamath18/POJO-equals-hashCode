@@ -53,11 +53,18 @@ public class TestCustomer {
 		aTreeMap.putAll(aMap);
 		System.out.println(aTreeMap); // print customer objects in ascending order by customer.name as given Comparator for Customer.name
 
-		aMap.put(new Customer(-1, "Adam", "adam@yahoo.com"), "-1");
+		
+		aMap.put(new Customer(-1, "xyz", "adam@yahoo.com"), "-1");
 		List<Map.Entry<Customer, String>> list =
                 new LinkedList<Map.Entry<Customer, String>>(aMap.entrySet());
-		Collections.sort(list, Customer.byValue);
+		Collections.sort(list, Customer.byValueomparator); // ascending order by value
 		System.out.println(list);
+		
+		
+		List<Map.Entry<Customer, String>> list_1 =
+                new LinkedList<Map.Entry<Customer, String>>(aMap.entrySet());
+		Collections.sort(list_1, Customer.byNameomparator); // descending order by customer.name
+		System.out.println(list_1);
 		
 	}
 

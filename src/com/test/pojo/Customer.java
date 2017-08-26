@@ -124,14 +124,27 @@ public class Customer implements Serializable, Comparable<Customer> {
  		}
  	};
  	
- 	public static Comparator<Map.Entry<Customer, String>> byValue = new Comparator<Map.Entry<Customer, String>>() {
+ 	/*
+ 	 * To sort map as per our own sorting logic
+ 	 */
+ 	public static Comparator<Map.Entry<Customer, String>> byValueomparator = new Comparator<Map.Entry<Customer, String>>() {
         public int compare(Map.Entry<Customer, String> o1,
                 Map.Entry<Customer, String> o2) {
 		 return (o1.getValue().toString()).compareTo(o2.getValue().toString());
 		}
  	};
+ 	
+ 	/*
+ 	 * To sort map as per our own sorting logic
+ 	 */
+ 	public static Comparator<Map.Entry<Customer, String>> byNameomparator = new Comparator<Map.Entry<Customer, String>>() {
+        public int compare(Map.Entry<Customer, String> o1,
+                Map.Entry<Customer, String> o2) {
+		 return (o2.getKey().getName()).compareTo(o1.getKey().getName());
+		}
+ 	};
 
  	
- 	// you may add as many Comparator and all about how you want sort or order your POJO
+ 	// you may add as many Comparator and all about how you want sort your POJO
  	
 }

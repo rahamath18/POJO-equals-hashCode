@@ -1,4 +1,4 @@
-package com.test.pojo.beforejava7;
+package com.test.pojo;
 
 import java.util.HashMap;
 import java.util.Map;

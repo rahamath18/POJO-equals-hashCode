@@ -3,7 +3,7 @@ package com.test.pojo;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestCustomerPOJO {
+public class TestCustomer {
 	
 	public static void main(String[] args) {
 		

@@ -2,15 +2,16 @@ package com.test.pojo;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import java.util.Map;
 import java.util.Objects;
 
 public class Customer implements Serializable, Comparable<Customer> {
 
 	private static final long serialVersionUID = 1L;
 	
-	int id;
-    String name;
-    String email;
+	private int id;
+	private String name;
+	private String email;
 
     public Customer(int id, String name, String email) {
         this.id = id;
@@ -44,7 +45,6 @@ public class Customer implements Serializable, Comparable<Customer> {
 
     @Override
     public boolean equals(Object obj) {
-    	
     	Customer cust = (Customer) obj;
     	
     	// before java 7
@@ -124,5 +124,14 @@ public class Customer implements Serializable, Comparable<Customer> {
  		}
  	};
  	
+ 	public static Comparator<Map.Entry<Customer, String>> byValue = new Comparator<Map.Entry<Customer, String>>() {
+        public int compare(Map.Entry<Customer, String> o1,
+                Map.Entry<Customer, String> o2) {
+		 return (o1.getValue().toString()).compareTo(o2.getValue().toString());
+		}
+ 	};
+
+ 	
  	// you may add as many Comparator and all about how you want sort or order your POJO
+ 	
 }
